@@ -1,0 +1,36 @@
+aside {
+    padding: 1%;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(252, 182, 54);
+    text-align: center;
+}
+
+aside a {
+    color: black;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: rgb(252, 182, 54);
+}
+
+aside a img:hover {
+    filter: opacity(90%);
+}
+
+.aside-card {
+    display: block;
+    list-style: none;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 90%;
+    margin: 5%;
+    background-color: #fff;
+}
+
+.aside-img {
+    display: block;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}

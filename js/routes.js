@@ -50,5 +50,25 @@ const PATHS = {
                 </fieldset>
             </form>
         `,
-    }
+    },
+    article1: {
+        path: "",
+        template: ``,
+    },
+    article2: {
+        path: "",
+        template: ``,
+    },
+    article3: {
+        path: "",
+        template: ``,
+    },
+    article4: {
+        path: "",
+        template: ``,
+    },
+    article5: {
+        path: "",
+        template: ``,
+    },
 }
