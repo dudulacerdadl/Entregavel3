@@ -38,6 +38,16 @@ footer {
     text-align: center;
 }
 
+.ref a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+.ref a:hover {
+    text-decoration: underline;
+}
+
 .redes-sociais li {
     display: inline-block;
     list-style: none;

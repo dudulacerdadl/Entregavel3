@@ -6,16 +6,17 @@ aside {
     text-align: center;
 }
 
-aside a {
+aside span {
     color: black;
     text-decoration: none;
+    cursor: pointer;
 }
 
-aside a:hover {
+aside span:hover {
     color: rgb(252, 182, 54);
 }
 
-aside a img:hover {
+aside span img:hover {
     filter: opacity(90%);
 }
 
