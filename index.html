@@ -20,9 +20,9 @@
 
         <nav class="top-nav">
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="more/Sobre.html">Sobre</a></li>
-                <li><a href="more/Contato.html">Contato</a></li>
+                <li><span onclick="ROUTER.load('home')">Início</span></li>
+                <li><span onclick="ROUTER.load('sobre')">Sobre</span></li>
+                <li><span onclick="ROUTER.load('contato')">Contato</span></li>
             </ul>
         </nav>
     </header>
@@ -44,6 +44,8 @@
         </ul>
     </footer>
 
+    <script src="js/router.js"></script>
+    <script src="js/routes.js"></script>
     <script src="js/main.js"></script>
 </body>
 

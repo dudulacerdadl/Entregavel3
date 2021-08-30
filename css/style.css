@@ -48,9 +48,10 @@ footer {
     width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+
+/* @media screen and (min-width: 1024px) {
     .container {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
-}
+} */
