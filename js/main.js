@@ -1,5 +1,3 @@
-const ROUTER = new Router(PATHS);
-
 var nav = document.querySelector('.top-nav');
 var mask = document.querySelector('.mask');
 var btnBurger = document.querySelector('.burger-button');

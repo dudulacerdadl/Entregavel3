@@ -1,26 +1,17 @@
-class Router {
+import routes from './routes.js';
 
-    constructor(paths) {
-        this.paths = paths;
-        this.initRouter();
-    }
+const container = document.querySelector(".container");
 
-    initRouter() {
-        const {
-            location: {
-                pathname = "/"
-            }
-        } = window;
-        const URI = pathname === "/" ? "home" : pathname.replace("/", "");
-        this.load(URI);
-    }
+const initRouter = () => window.addEventListener('hashchange', renderPage);
+const validateHash = (hash) => hash === "" ? 'home' : hash.replace('#', '');
 
-    load(page = "home") {
-        const { paths } = this;
-        const { path, template } = paths[page] || paths.error;
-        const container = document.querySelector(".container");
-        container.innerHTML = template;
-        window.history.pushState({}, "Genial", path);
-    }
-
+const renderPage = () => {
+    const page = validateHash(window.location.hash);
+    container.innerHTML = '';
+    container.appendChild(routes[page]);
 }
+
+window.addEventListener('load', () => {
+    renderPage();
+    initRouter();
+});
